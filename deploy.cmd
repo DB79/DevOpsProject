@@ -109,7 +109,7 @@ IF EXIST "%DEPLOYMENT_SOURCE%\package.json" (
 )
 
 :: 4. Build application
-IF EXIST "%DEPLOYMENT_SOURCE%\angular-cli.json" (
+IF EXIST "%DEPLOYMENT_SOURCE%\.angular-cli.json" (
   pushd "%DEPLOYMENT_SOURCE%"
   echo using ng build to build dist folder files
   call :ExecuteCmd ng build --progress false --prod --aot
