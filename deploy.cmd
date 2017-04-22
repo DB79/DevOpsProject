@@ -27,7 +27,7 @@ IF NOT DEFINED DEPLOYMENT_SOURCE (
 )
 
 IF NOT DEFINED DEPLOYMENT_TARGET (
-  SET DEPLOYMENT_TARGET=%ARTIFACTS%\wwwroot\dist
+  SET DEPLOYMENT_TARGET=%ARTIFACTS%\wwwroot
 )
 
 IF NOT DEFINED NEXT_MANIFEST_PATH (
@@ -110,6 +110,7 @@ IF EXIST "%DEPLOYMENT_SOURCE%\package.json" (
 IF EXIST "%DEPLOYMENT_SOURCE%\angular-cli.json" (
   pushd "%DEPLOYMENT_SOURCE%"
   call :ExecuteCmd ng build --progress false --prod --aot
+  echo using ng build to build dist folder files
   IF !ERRORLEVEL! NEQ 0 goto error
   popd
 )
