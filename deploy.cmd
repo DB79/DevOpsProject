@@ -111,7 +111,7 @@ IF EXIST "%DEPLOYMENT_SOURCE%\package.json" (
 :: 4. Build application
 IF EXIST "%DEPLOYMENT_SOURCE%\angular-cli.json" (
   pushd "%DEPLOYMENT_SOURCE%"
-  call :ExecuteCmd ng build --progress false --prod --aot
+  call :ExecuteCmd !NPM_CMD! ng build --progress false --prod --aot
   echo using ng build to build dist folder files
   IF !ERRORLEVEL! NEQ 0 goto error
   popd
