@@ -105,6 +105,16 @@ IF EXIST "%DEPLOYMENT_TARGET%\package.json" (
   popd
 )
 
+:: 3. Install npm packages
+IF EXIST "%DEPLOYMENT_TARGET%\.angular-cli.json" (
+  pushd "%DEPLOYMENT_TARGET%"
+  call :ExecuteCmd ng build --aot -prod
+  IF !ERRORLEVEL! NEQ 0 goto error
+  popd
+)
+
+
+
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 goto end
 
