@@ -1,5 +1,8 @@
 # DevOpsProject
 
+<img src="http://33dc3f10.ngrok.io/teamcity/app/rest/builds/buildType:(id:DevOpsProjectAngularAzure_Build)/statusIcon"/>
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
 ## Development server
