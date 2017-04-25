@@ -31,4 +31,6 @@ import { StockInventoryService } from './services/stock-inventory.service';
     StockInventoryComponent
   ]
 })
-export class StockInventoryModule {}
+export class StockInventoryModule {
+
+}
