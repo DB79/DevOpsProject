@@ -96,22 +96,7 @@ IF /I "%IN_PLACE_DEPLOYMENT%" NEQ "1" (
 
 :: 2. Select node version
 call :SelectNodeVersion
-
-:: 3. Install npm packages
-::IF EXIST "%DEPLOYMENT_TARGET%\package.json" (
-  ::pushd "%DEPLOYMENT_TARGET%"
-::call :ExecuteCmd !NPM_CMD! install
-  ::IF !ERRORLEVEL! NEQ 0 goto error
-  ::popd
-::)
-
-:: 3. Install npm packages
-::IF EXIST "%DEPLOYMENT_TARGET%\.angular-cli.json" (
-  ::pushd "%DEPLOYMENT_TARGET%"
-  ::call :ExecuteCmd ng build --aot -prod
-  ::IF !ERRORLEVEL! NEQ 0 goto error
-  ::popd
-::)
+)
 
 
 
