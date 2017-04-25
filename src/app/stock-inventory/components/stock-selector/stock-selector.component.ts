@@ -41,7 +41,7 @@ import { Product } from '../../models/product.interface';
 export class StockSelectorComponent {
   @Input()
   parent: FormGroup;
-  
+
   @Input()
   products: Product[];
 

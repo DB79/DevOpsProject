@@ -43,28 +43,30 @@ const COUNTER_CONTROL_ACCESSOR = {
 })
 export class StockCounterComponent implements ControlValueAccessor {
 
+
+  @Input() step: number = 10;
+
+  @Input() min: number = 10;
+
+  @Input() max: number = 1000;
+
+  value: number = 10;
+
+  focus: boolean;
   private onTouch: Function;
   private onModelChange: Function;
 
   registerOnTouched(fn) {
     this.onTouch = fn;
   }
-  
+
   registerOnChange(fn) {
     this.onModelChange = fn;
   }
-  
+
   writeValue(value) {
     this.value = value || 0;
   }
-
-  @Input() step: number = 10;
-  @Input() min: number = 10;
-  @Input() max: number = 1000;
-
-  value: number = 10;
-
-  focus: boolean;
 
   onKeyDown(event: KeyboardEvent) {
 
