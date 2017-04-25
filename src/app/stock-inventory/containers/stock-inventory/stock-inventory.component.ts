@@ -29,7 +29,7 @@ import { Product, Item } from '../../models/product.interface';
 
         <stock-products
           [parent]="form"
-          [map]="productMap"
+          [map]="productsMap"
           (removed)="removeStock($event)">
         </stock-products>
 
@@ -55,7 +55,7 @@ export class StockInventoryComponent implements OnInit {
 
   total: number;
 
-  productMap: Map<number, Product>;
+  productsMap: Map<number, Product>;
 
   form = this.fb.group({
     store: this.fb.group({
@@ -85,7 +85,7 @@ export class StockInventoryComponent implements OnInit {
         const myMap = products
           .map<[number, Product]>(product => [product.id, product]);
         
-        this.productMap = new Map<number, Product>(myMap);
+        this.productsMap = new Map<number, Product>(myMap);
         this.products = products;
         cart.forEach(item => this.addStock(item));
 
@@ -106,7 +106,7 @@ export class StockInventoryComponent implements OnInit {
 
   calculateTotal(value: Item[]) {
     const total = value.reduce((prev, next) => {
-      return prev + (next.quantity * this.productMap.get(next.product_id).price);
+      return prev + (next.quantity * this.productsMap.get(next.product_id).price);
     }, 0);
     this.total = total;
   }

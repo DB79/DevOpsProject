@@ -31,18 +31,4 @@ export class StockInventoryService {
       { 'id': 4, 'price': 900, 'name': 'iPhone' },
       { 'id': 5, 'price': 600, 'name': 'Apple Watch' }])
   }
-
-  checkBranchId(id: string){
-    // let ids = [{ "id": "B182" },
-    // { "id": "A779" },
-    // { "id": "C390" },
-    // { "id": "R262" }];
-
-    // let search = new URLSearchParams();
-    // search.set('id', id);
-    // return this.http
-    //   .map((response: Response) => response.json())
-    //   .map((response: any[]) => !!response.length)
-    //   .catch((error: any) => Observable.throw(error.json()));
-  }
 }
