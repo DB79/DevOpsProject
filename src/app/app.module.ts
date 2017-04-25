@@ -1,7 +1,7 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { BrowserModule } from '@angular/platform-browser';
+
+import { StockInventoryModule } from './stock-inventory/stock-inventory.module';
 
 import { AppComponent } from './app.component';
 
@@ -11,10 +11,10 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule,
-    HttpModule
+    StockInventoryModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [
+    AppComponent
+  ]
 })
-export class AppModule { }
+export class AppModule {}

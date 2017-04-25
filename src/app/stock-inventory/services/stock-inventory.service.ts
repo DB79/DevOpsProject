@@ -1,0 +1,48 @@
+import { Injectable } from '@angular/core';
+import { Http, Response, URLSearchParams } from '@angular/http';
+
+import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/operator/map';
+import 'rxjs/add/operator/catch';
+import 'rxjs/add/observable/throw';
+import 'rxjs/add/observable/of';
+
+
+import { Product, Item } from '../models/product.interface';
+
+@Injectable()
+export class StockInventoryService {
+  constructor(
+    private http: Http
+  ) { }
+
+  getCartItems(): Observable<Item[]> {
+    return Observable.of([
+      { 'product_id': 1, 'quantity': 10 },
+      { 'product_id': 3, 'quantity': 50 }
+    ])
+  }
+
+  getProducts(): Observable<Product[]> {
+    return Observable.of([
+      { 'id': 1, 'price': 2800, 'name': 'MacBook Pro' },
+      { 'id': 2, 'price': 50, 'name': 'USB-C Adaptor' },
+      { 'id': 3, 'price': 400, 'name': 'iPod' },
+      { 'id': 4, 'price': 900, 'name': 'iPhone' },
+      { 'id': 5, 'price': 600, 'name': 'Apple Watch' }])
+  }
+
+  checkBranchId(id: string){
+    // let ids = [{ "id": "B182" },
+    // { "id": "A779" },
+    // { "id": "C390" },
+    // { "id": "R262" }];
+
+    // let search = new URLSearchParams();
+    // search.set('id', id);
+    // return this.http
+    //   .map((response: Response) => response.json())
+    //   .map((response: any[]) => !!response.length)
+    //   .catch((error: any) => Observable.throw(error.json()));
+  }
+}
