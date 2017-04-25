@@ -1,6 +1,8 @@
 # DevOpsProject
 
-<img src="http://33dc3f10.ngrok.io/teamcity/app/rest/builds/buildType:(id:DevOpsProjectAngularAzure_Build)/statusIcon"/>
+<a href="http://33dc3f10.ngrok.io/viewType.html?buildTypeId=DevOpsProjectAngularAzure_Build&guest=1">
+<img src="http://33dc3f10.ngrok.io/app/rest/builds/buildType:(id:DevOpsProjectAngularAzure_Build)/statusIcon"/>
+</a>
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
