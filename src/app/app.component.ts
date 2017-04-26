@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   template: `
     <div>
+      <h2>Stock System</h2>
       <stock-inventory></stock-inventory>
     </div>
   `
