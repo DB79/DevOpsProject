@@ -10,12 +10,6 @@ import { StockInventoryService } from '../../services/stock-inventory.service';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/observable/of';
 
-// TestBed.initTestEnvironment(
-//   BrowserDynamicTestingModule,
-//   platformBrowserDynamicTesting()
-// );
-
-
 class MockStockInventoryService {
   getProducts() {
     return Observable.of([{ id: 1, price: 10, name: 'Test' }, { id: 2, price: 100, name: 'Another test'}]);
@@ -62,7 +56,7 @@ describe('StockInventoryComponent', () => {
 
   it('should create a product map from the service response', () => {
     component.ngOnInit();
-    expect(component.productsMap.get(1)).toEqual({ id: 1, price: 10, name: 'Test' });
+    expect(component.productsMap.get(1)).toEqual({ id: 2, price: 10, name: 'Test' });
     expect(component.productsMap.get(2)).toEqual({ id: 2, price: 100, name: 'Another test' });
   });
 

@@ -5,7 +5,6 @@ import { Component } from '@angular/core';
     <div>
       <h2>Stock System</h2>
       <hr>
-      <hr>
       <stock-inventory></stock-inventory>
     </div>
   `
