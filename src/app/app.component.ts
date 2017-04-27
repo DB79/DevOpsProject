@@ -4,8 +4,9 @@ import { Component } from '@angular/core';
   template: `
     <div>
       <h1>Dev Ops Project</h1>
-      <h2>Stock System</h2>
       <hr>
+      <h2>Stock System</h2>
+      
       <stock-inventory></stock-inventory>
     </div>
   `
