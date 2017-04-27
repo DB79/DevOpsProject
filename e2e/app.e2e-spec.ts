@@ -9,6 +9,6 @@ describe('dev-ops-project App', () => {
 
   it('should display h2 saying Stock System', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Stock System');
+    expect(page.getParagraphText()).toEqual('Stock System - failing');
   });
 });
