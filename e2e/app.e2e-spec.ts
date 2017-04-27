@@ -9,6 +9,11 @@ describe('dev-ops-project App', () => {
 
   it('should display h2 saying Stock System', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Stock System - failing');
+    expect(page.getH2Text()).toEqual('Stock System');
+  });
+
+  it('should display h1 saying Dev Ops Project', () => {
+    page.navigateTo();
+    expect(page.getH1Text()).toEqual('Dev Ops Project');
   });
 });

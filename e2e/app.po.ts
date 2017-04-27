@@ -2,10 +2,14 @@ import { browser, element, by } from 'protractor';
 
 export class DevOpsProjectPage {
   navigateTo() {
-    return browser.get('http://damien-devops.azurewebsites.net/');
+    return browser.get('/');
   }
 
-  getParagraphText() {
+  getH2Text() {
     return element(by.css('app-root h2')).getText();
+  }
+
+  getH1Text(){
+    return element(by.css('app-root h1')).getText();
   }
 }
