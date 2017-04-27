@@ -62,7 +62,7 @@ describe('StockInventoryComponent', () => {
 
   it('should store the products response', () => {
     component.ngOnInit();
-    expect(component.products).toEqual([{ id: 1, price: 10, name: 'Test' }, { id: 2, price: 100, name: 'Another test'}]);
+    expect(component.products).toEqual([{ id: 2, price: 10, name: 'Test' }, { id: 2, price: 100, name: 'Another test'}]);
   });
 
   it('should create a stock item for each cart item', () => {
