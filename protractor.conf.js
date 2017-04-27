@@ -12,7 +12,6 @@ exports.config = {
     'browserName': 'chrome'
   },
   directConnect: true,
-  baseUrl: 'http://application-angular-devops.azurewebsites.net/',
   framework: 'jasmine',
   jasmineNodeOpts: {
     showColors: true,

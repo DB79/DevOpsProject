@@ -7,8 +7,8 @@ describe('dev-ops-project App', () => {
     page = new DevOpsProjectPage();
   });
 
-  it('should display message saying app works', () => {
+  it('should display h2 saying Stock System', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('hello world');
+    expect(page.getParagraphText()).toEqual('Stock System');
   });
 });
