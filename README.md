@@ -1,7 +1,7 @@
 # DevOpsProject
 
-<a href="http://3bdef83d.ngrok.io/viewType.html?buildTypeId=DevOpsProjectAngularAzure_Build&guest=1">
-<img src="http://3bdef83d.ngrok.io/app/rest/builds/buildType:(id:DevOpsProjectAngularAzure_Build)/statusIcon"/>
+<a href="http://c2b7a992.ngrok.io//viewType.html?buildTypeId=DevOpsProjectAngularAzure_Build&guest=1">
+<img src="http://c2b7a992.ngrok.io/app/rest/builds/buildType:(id:DevOpsProjectAngularAzure_Build)/statusIcon"/>
 </a>
 
 
