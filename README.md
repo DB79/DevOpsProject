@@ -1,6 +1,6 @@
 # DevOpsProject
 
-<a href=" http://abd5fbbb.ngrok.io//viewType.html?buildTypeId=DevOpsProjectAngularAzure_Build&guest=1">
+<a href=" http://abd5fbbb.ngrok.io/viewType.html?buildTypeId=DevOpsProjectAngularAzure_Build&guest=1">
 <img src=" http://abd5fbbb.ngrok.io/app/rest/builds/buildType:(id:DevOpsProjectAngularAzure_Build)/statusIcon"/>
 </a>
 
